@@ -1,20 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ff3c7ca3-1212-49e2-a4b0-f99ec3d7d9a4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/config/ProfileEndpointConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/domain/Profile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/domain/repository/ProfileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/service/ProfileHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/service/ProfileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/service/impl/MongoProfileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/service/impl/ProfileHandlerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/kc4kt4/reactive/crud/config/ProfileEndpoints.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/kc4kt4/reactive/crud/service/impl/MongoProfileServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud.iml" beforeDir="false" afterPath="$PROJECT_DIR$/crud.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/kc4kt4/reactive/crud/CrudApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/kc4kt4/reactive/crud/CrudApplicationTests.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1b5Xhu8Sy3AxaTqiHCOhCmD4H7p" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.37114847" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="JUnit.CrudApplicationTests">
-    <configuration name="CrudApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ru.kc4kt4.reactive.crud.service.impl" />
+      <recent name="ru.kc4kt4.reactive.crud.config" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="ru.kc4kt4.reactive.crud.service" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All in crud">
+    <configuration name="All in crud" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crud" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MongoProfileServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="crud" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.kc4kt4.reactive.crud.*" />
+          <option name="PATTERN" value="ru.kc4kt4.reactive.crud.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.kc4kt4.reactive.crud" />
-      <option name="MAIN_CLASS_NAME" value="ru.kc4kt4.reactive.crud.CrudApplicationTests" />
+      <option name="PACKAGE_NAME" value="ru.kc4kt4.reactive.crud.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="ru.kc4kt4.reactive.crud.service.impl.MongoProfileServiceTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MongoProfileServiceTest.all" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crud" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.kc4kt4.reactive.crud.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.kc4kt4.reactive.crud.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="ru.kc4kt4.reactive.crud.service.impl.MongoProfileServiceTest" />
+      <option name="METHOD_NAME" value="all" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MongoProfileServiceTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crud" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.kc4kt4.reactive.crud.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.kc4kt4.reactive.crud.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="ru.kc4kt4.reactive.crud.service.impl.MongoProfileServiceTest" />
+      <option name="METHOD_NAME" value="create" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MongoProfileServiceTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crud" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.kc4kt4.reactive.crud.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.kc4kt4.reactive.crud.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="ru.kc4kt4.reactive.crud.service.impl.MongoProfileServiceTest" />
+      <option name="METHOD_NAME" value="delete" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -28,8 +150,124 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CrudApplicationTests" />
+        <item itemvalue="JUnit.All in crud" />
+        <item itemvalue="JUnit.MongoProfileServiceTest" />
+        <item itemvalue="JUnit.MongoProfileServiceTest.delete" />
+        <item itemvalue="JUnit.MongoProfileServiceTest.create" />
+        <item itemvalue="JUnit.MongoProfileServiceTest.all" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ff3c7ca3-1212-49e2-a4b0-f99ec3d7d9a4" name="Default Changelist" comment="" />
+      <created>1587923050690</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587923050690</updated>
+      <workItem from="1587923057200" duration="6757000" />
+      <workItem from="1588232932497" duration="4756000" />
+      <workItem from="1588249224529" duration="8699000" />
+    </task>
+    <task id="LOCAL-00001" summary="init commit">
+      <created>1587923319808</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587923319808</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="121" y="0" key="#Project_Structure" timestamp="1587925803043">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="121" y="0" key="#Project_Structure/0.0.1280.720@0.0.1280.720" timestamp="1587925803043" />
+    <state x="446" y="67" key="#com.intellij.ide.util.MemberChooser" timestamp="1588235245389">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="446" y="67" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1588235245389" />
+    <state x="145" y="6" width="1097" height="692" key="#xdebugger.evaluate" timestamp="1588269953569">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="145" y="6" width="1097" height="692" key="#xdebugger.evaluate/0.0.1280.720@0.0.1280.720" timestamp="1588269953569" />
+    <state x="264" y="0" key="CommitChangelistDialog2" timestamp="1587923319020">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1587923319020" />
+    <state x="520" y="259" key="Github.ShareDialog" timestamp="1587923248418">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="520" y="259" key="Github.ShareDialog/0.0.1280.720@0.0.1280.720" timestamp="1587923248418" />
+    <state width="1237" height="324" key="GridCell.Tab.0.bottom" timestamp="1588271779653">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="324" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1588271779653" />
+    <state width="1237" height="324" key="GridCell.Tab.0.center" timestamp="1588271779653">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="324" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1588271779653" />
+    <state width="1237" height="324" key="GridCell.Tab.0.left" timestamp="1588271779653">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="324" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1588271779653" />
+    <state width="1237" height="324" key="GridCell.Tab.0.right" timestamp="1588271779653">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="324" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1588271779653" />
+    <state width="1237" height="304" key="GridCell.Tab.1.bottom" timestamp="1588270051266">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="304" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1588270051266" />
+    <state width="1237" height="304" key="GridCell.Tab.1.center" timestamp="1588270051265">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="304" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1588270051265" />
+    <state width="1237" height="304" key="GridCell.Tab.1.left" timestamp="1588270051265">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="304" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1588270051265" />
+    <state width="1237" height="304" key="GridCell.Tab.1.right" timestamp="1588270051265">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="304" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1588270051265" />
+    <state x="412" y="183" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1588253780535">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="412" y="183" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.720@0.0.1280.720" timestamp="1588253780535" />
+    <state x="371" y="111" key="extract.method.dialog" timestamp="1588269542335">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="371" y="111" key="extract.method.dialog/0.0.1280.720@0.0.1280.720" timestamp="1588269542335" />
+    <state x="347" y="95" width="587" height="530" key="find.popup" timestamp="1588233331892">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="347" y="95" width="587" height="530" key="find.popup/0.0.1280.720@0.0.1280.720" timestamp="1588233331892" />
+    <state x="443" y="267" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1587923266485">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="443" y="267" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.720@0.0.1280.720" timestamp="1587923266485" />
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1588270587243">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1588270587243" />
   </component>
 </project>
