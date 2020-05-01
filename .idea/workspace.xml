@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff3c7ca3-1212-49e2-a4b0-f99ec3d7d9a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/config/ProfileEndpointConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/domain/Profile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/domain/repository/ProfileRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/service/ProfileHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/service/ProfileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/service/impl/MongoProfileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/service/impl/ProfileHandlerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/kc4kt4/reactive/crud/config/ProfileEndpoints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/kc4kt4/reactive/crud/service/impl/MongoProfileServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud.iml" beforeDir="false" afterPath="$PROJECT_DIR$/crud.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/kc4kt4/reactive/crud/CrudApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/kc4kt4/reactive/crud/CrudApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,13 +29,17 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.37114847" />
@@ -67,6 +58,9 @@
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\i.vasilevskiy\Desktop\crud\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.All in crud">
@@ -170,7 +164,7 @@
       <updated>1587923050690</updated>
       <workItem from="1587923057200" duration="6757000" />
       <workItem from="1588232932497" duration="4756000" />
-      <workItem from="1588249224529" duration="8699000" />
+      <workItem from="1588249224529" duration="11247000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1587923319808</created>
@@ -179,7 +173,21 @@
       <option name="project" value="LOCAL" />
       <updated>1587923319808</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="CRUD operations endpoint and repo with tests is done">
+      <created>1588271832341</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588271832341</updated>
+    </task>
+    <task id="LOCAL-00003" summary="delete unused method">
+      <created>1588271932635</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588271932636</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,7 +199,9 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+    <MESSAGE value="CRUD operations endpoint and repo with tests is done" />
+    <MESSAGE value="delete unused method" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete unused method" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -209,46 +219,46 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="145" y="6" width="1097" height="692" key="#xdebugger.evaluate/0.0.1280.720@0.0.1280.720" timestamp="1588269953569" />
-    <state x="264" y="0" key="CommitChangelistDialog2" timestamp="1587923319020">
+    <state x="264" y="0" key="CommitChangelistDialog2" timestamp="1588271931930">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1587923319020" />
+    <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1588271931930" />
     <state x="520" y="259" key="Github.ShareDialog" timestamp="1587923248418">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="520" y="259" key="Github.ShareDialog/0.0.1280.720@0.0.1280.720" timestamp="1587923248418" />
-    <state width="1237" height="324" key="GridCell.Tab.0.bottom" timestamp="1588271779653">
+    <state width="1237" height="410" key="GridCell.Tab.0.bottom" timestamp="1588331348513">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="324" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1588271779653" />
-    <state width="1237" height="324" key="GridCell.Tab.0.center" timestamp="1588271779653">
+    <state width="1237" height="410" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1588331348513" />
+    <state width="1237" height="410" key="GridCell.Tab.0.center" timestamp="1588331348512">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="324" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1588271779653" />
-    <state width="1237" height="324" key="GridCell.Tab.0.left" timestamp="1588271779653">
+    <state width="1237" height="410" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1588331348512" />
+    <state width="1237" height="410" key="GridCell.Tab.0.left" timestamp="1588331348512">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="324" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1588271779653" />
-    <state width="1237" height="324" key="GridCell.Tab.0.right" timestamp="1588271779653">
+    <state width="1237" height="410" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1588331348512" />
+    <state width="1237" height="410" key="GridCell.Tab.0.right" timestamp="1588331348512">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="324" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1588271779653" />
-    <state width="1237" height="304" key="GridCell.Tab.1.bottom" timestamp="1588270051266">
+    <state width="1237" height="410" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1588331348512" />
+    <state width="1237" height="324" key="GridCell.Tab.1.bottom" timestamp="1588330738624">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="304" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1588270051266" />
-    <state width="1237" height="304" key="GridCell.Tab.1.center" timestamp="1588270051265">
+    <state width="1237" height="324" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1588330738624" />
+    <state width="1237" height="324" key="GridCell.Tab.1.center" timestamp="1588330738624">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="304" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1588270051265" />
-    <state width="1237" height="304" key="GridCell.Tab.1.left" timestamp="1588270051265">
+    <state width="1237" height="324" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1588330738624" />
+    <state width="1237" height="324" key="GridCell.Tab.1.left" timestamp="1588330738624">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="304" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1588270051265" />
-    <state width="1237" height="304" key="GridCell.Tab.1.right" timestamp="1588270051265">
+    <state width="1237" height="324" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1588330738624" />
+    <state width="1237" height="324" key="GridCell.Tab.1.right" timestamp="1588330738624">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="304" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1588270051265" />
+    <state width="1237" height="324" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1588330738624" />
     <state x="412" y="183" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1588253780535">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -265,9 +275,9 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="443" y="267" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.720@0.0.1280.720" timestamp="1587923266485" />
-    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1588270587243">
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1588330676377">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1588270587243" />
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1588330676377" />
   </component>
 </project>
