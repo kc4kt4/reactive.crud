@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff3c7ca3-1212-49e2-a4b0-f99ec3d7d9a4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/repository/ProfileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/service/ProfileRepositoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/service/impl/ProfileRepositoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/kc4kt4/reactive/crud/service/impl/ProfileRepositoryServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/domain/repository/ProfileRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/service/impl/MongoProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/service/impl/MongoProfileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/kc4kt4/reactive/crud/service/impl/MongoProfileServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/kc4kt4/reactive/crud/service/impl/MongoProfileServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +49,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.37114847" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -54,6 +61,11 @@
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="ru.kc4kt4.reactive.crud.service" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ru.kc4kt4.reactive.crud.service.impl" />
+      <recent name="ru.kc4kt4.reactive.crud.service" />
+      <recent name="ru.kc4kt4.reactive.crud" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -75,7 +87,7 @@
       <module name="crud" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.kc4kt4.reactive.crud.service.impl.*" />
+          <option name="PATTERN" value="ru.kc4kt4.reactive.crud.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,7 +102,7 @@
       <module name="crud" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.kc4kt4.reactive.crud.service.impl.*" />
+          <option name="PATTERN" value="ru.kc4kt4.reactive.crud.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,7 +114,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MongoProfileServiceTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProfileRepositoryServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="crud" />
       <extension name="coverage">
         <pattern>
@@ -111,14 +123,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.kc4kt4.reactive.crud.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="ru.kc4kt4.reactive.crud.service.impl.MongoProfileServiceTest" />
-      <option name="METHOD_NAME" value="create" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="ru.kc4kt4.reactive.crud.service.impl.ProfileRepositoryServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MongoProfileServiceTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProfileRepositoryServiceImplTest.all" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="crud" />
       <extension name="coverage">
         <pattern>
@@ -127,8 +138,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.kc4kt4.reactive.crud.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="ru.kc4kt4.reactive.crud.service.impl.MongoProfileServiceTest" />
-      <option name="METHOD_NAME" value="delete" />
+      <option name="MAIN_CLASS_NAME" value="ru.kc4kt4.reactive.crud.service.impl.ProfileRepositoryServiceImplTest" />
+      <option name="METHOD_NAME" value="all" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -144,9 +155,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in crud" />
+        <item itemvalue="JUnit.ProfileRepositoryServiceImplTest.all" />
+        <item itemvalue="JUnit.ProfileRepositoryServiceImplTest" />
         <item itemvalue="JUnit.MongoProfileServiceTest" />
-        <item itemvalue="JUnit.MongoProfileServiceTest.delete" />
-        <item itemvalue="JUnit.MongoProfileServiceTest.create" />
         <item itemvalue="JUnit.MongoProfileServiceTest.all" />
       </list>
     </recent_temporary>
@@ -163,7 +174,7 @@
       <updated>1587923050690</updated>
       <workItem from="1587923057200" duration="6757000" />
       <workItem from="1588232932497" duration="4756000" />
-      <workItem from="1588249224529" duration="12071000" />
+      <workItem from="1588249224529" duration="15773000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1587923319808</created>
@@ -193,7 +204,21 @@
       <option name="project" value="LOCAL" />
       <updated>1588331431580</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update gitignore file">
+      <created>1588403426877</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1588403426877</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update ignoring">
+      <created>1588403478932</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1588403478932</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +233,9 @@
     <MESSAGE value="CRUD operations endpoint and repo with tests is done" />
     <MESSAGE value="delete unused method" />
     <MESSAGE value="add logging config" />
-    <option name="LAST_COMMIT_MESSAGE" value="add logging config" />
+    <MESSAGE value="update gitignore file" />
+    <MESSAGE value="update ignoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="update ignoring" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -218,38 +245,50 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="121" y="0" key="#Project_Structure/0.0.1280.720@0.0.1280.720" timestamp="1587925803043" />
-    <state x="446" y="67" key="#com.intellij.ide.util.MemberChooser" timestamp="1588235245389">
+    <state x="446" y="67" key="#com.intellij.ide.util.MemberChooser" timestamp="1588439292275">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="446" y="67" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1588235245389" />
+    <state x="446" y="67" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1588439292275" />
+    <state x="249" y="285" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1588439129996">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="249" y="285" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.720@0.0.1280.720" timestamp="1588439129996" />
+    <state x="410" y="230" width="461" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1588439416518">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="410" y="230" width="461" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.720@0.0.1280.720" timestamp="1588439416518" />
+    <state x="438" y="242" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1588439131448">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="438" y="242" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1280.720@0.0.1280.720" timestamp="1588439131448" />
     <state x="145" y="6" width="1097" height="692" key="#xdebugger.evaluate" timestamp="1588269953569">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="145" y="6" width="1097" height="692" key="#xdebugger.evaluate/0.0.1280.720@0.0.1280.720" timestamp="1588269953569" />
-    <state x="264" y="0" key="CommitChangelistDialog2" timestamp="1588331430963">
+    <state x="264" y="0" key="CommitChangelistDialog2" timestamp="1588403478374">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1588331430963" />
+    <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1588403478374" />
     <state x="520" y="259" key="Github.ShareDialog" timestamp="1587923248418">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="520" y="259" key="Github.ShareDialog/0.0.1280.720@0.0.1280.720" timestamp="1587923248418" />
-    <state width="1237" height="410" key="GridCell.Tab.0.bottom" timestamp="1588331433020">
+    <state width="1237" height="410" key="GridCell.Tab.0.bottom" timestamp="1588500280131">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="410" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1588331433020" />
-    <state width="1237" height="410" key="GridCell.Tab.0.center" timestamp="1588331433019">
+    <state width="1237" height="410" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1588500280131" />
+    <state width="1237" height="410" key="GridCell.Tab.0.center" timestamp="1588500280131">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="410" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1588331433019" />
-    <state width="1237" height="410" key="GridCell.Tab.0.left" timestamp="1588331433019">
+    <state width="1237" height="410" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1588500280131" />
+    <state width="1237" height="410" key="GridCell.Tab.0.left" timestamp="1588500280131">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="410" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1588331433019" />
-    <state width="1237" height="410" key="GridCell.Tab.0.right" timestamp="1588331433020">
+    <state width="1237" height="410" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1588500280131" />
+    <state width="1237" height="410" key="GridCell.Tab.0.right" timestamp="1588500280131">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="410" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1588331433020" />
+    <state width="1237" height="410" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1588500280131" />
     <state width="1237" height="324" key="GridCell.Tab.1.bottom" timestamp="1588330738624">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -266,10 +305,14 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state width="1237" height="324" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1588330738624" />
-    <state x="412" y="183" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1588253780535">
+    <state x="142" y="6" key="SettingsEditor" timestamp="1588498421765">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="412" y="183" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.720@0.0.1280.720" timestamp="1588253780535" />
+    <state x="142" y="6" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1588498421765" />
+    <state x="412" y="183" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1588439615306">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="412" y="183" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.720@0.0.1280.720" timestamp="1588439615306" />
     <state x="371" y="111" key="extract.method.dialog" timestamp="1588269542335">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -282,9 +325,9 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="443" y="267" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.720@0.0.1280.720" timestamp="1587923266485" />
-    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1588330676377">
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1588439679442">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1588330676377" />
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1588439679442" />
   </component>
 </project>

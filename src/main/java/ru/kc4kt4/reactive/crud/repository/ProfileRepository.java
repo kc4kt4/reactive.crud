@@ -1,4 +1,4 @@
-package ru.kc4kt4.reactive.crud.domain.repository;
+package ru.kc4kt4.reactive.crud.repository;
 
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 import ru.kc4kt4.reactive.crud.domain.Profile;
