@@ -13,7 +13,7 @@ import ru.kc4kt4.reactive.crud.service.ProfileService;
 @Service
 @Slf4j
 @AllArgsConstructor
-public class MongoProfileService implements ProfileService {
+public class ProfileServiceImpl implements ProfileService {
     private final ProfileRepositoryService service;
 
     @Override

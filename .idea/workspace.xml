@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff3c7ca3-1212-49e2-a4b0-f99ec3d7d9a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/repository/ProfileRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/service/ProfileRepositoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/service/impl/ProfileRepositoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/kc4kt4/reactive/crud/service/impl/ProfileRepositoryServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/domain/repository/ProfileRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/service/impl/MongoProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/service/impl/MongoProfileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/kc4kt4/reactive/crud/service/impl/MongoProfileServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/kc4kt4/reactive/crud/service/impl/MongoProfileServiceTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="ff3c7ca3-1212-49e2-a4b0-f99ec3d7d9a4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -174,7 +164,7 @@
       <updated>1587923050690</updated>
       <workItem from="1587923057200" duration="6757000" />
       <workItem from="1588232932497" duration="4756000" />
-      <workItem from="1588249224529" duration="15773000" />
+      <workItem from="1588249224529" duration="16139000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1587923319808</created>
@@ -218,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588403478932</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="[refactoring] change tests and move data access to repositoryService">
+      <created>1588500608862</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1588500608862</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +232,8 @@
     <MESSAGE value="add logging config" />
     <MESSAGE value="update gitignore file" />
     <MESSAGE value="update ignoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="update ignoring" />
+    <MESSAGE value="[refactoring] change tests and move data access to repositoryService" />
+    <option name="LAST_COMMIT_MESSAGE" value="[refactoring] change tests and move data access to repositoryService" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -265,30 +263,30 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="145" y="6" width="1097" height="692" key="#xdebugger.evaluate/0.0.1280.720@0.0.1280.720" timestamp="1588269953569" />
-    <state x="264" y="0" key="CommitChangelistDialog2" timestamp="1588403478374">
+    <state x="264" y="0" key="CommitChangelistDialog2" timestamp="1588500607879">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1588403478374" />
+    <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1588500607879" />
     <state x="520" y="259" key="Github.ShareDialog" timestamp="1587923248418">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="520" y="259" key="Github.ShareDialog/0.0.1280.720@0.0.1280.720" timestamp="1587923248418" />
-    <state width="1237" height="410" key="GridCell.Tab.0.bottom" timestamp="1588500280131">
+    <state width="1237" height="410" key="GridCell.Tab.0.bottom" timestamp="1588500578581">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="410" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1588500280131" />
-    <state width="1237" height="410" key="GridCell.Tab.0.center" timestamp="1588500280131">
+    <state width="1237" height="410" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1588500578581" />
+    <state width="1237" height="410" key="GridCell.Tab.0.center" timestamp="1588500578580">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="410" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1588500280131" />
-    <state width="1237" height="410" key="GridCell.Tab.0.left" timestamp="1588500280131">
+    <state width="1237" height="410" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1588500578580" />
+    <state width="1237" height="410" key="GridCell.Tab.0.left" timestamp="1588500578580">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="410" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1588500280131" />
-    <state width="1237" height="410" key="GridCell.Tab.0.right" timestamp="1588500280131">
+    <state width="1237" height="410" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1588500578580" />
+    <state width="1237" height="410" key="GridCell.Tab.0.right" timestamp="1588500578580">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="410" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1588500280131" />
+    <state width="1237" height="410" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1588500578580" />
     <state width="1237" height="324" key="GridCell.Tab.1.bottom" timestamp="1588330738624">
       <screen x="0" y="0" width="1280" height="720" />
     </state>

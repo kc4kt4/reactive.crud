@@ -19,11 +19,11 @@ import static org.mockito.Mockito.*;
 
 @ExtendWith(SpringExtension.class)
 @ActiveProfiles("test")
-@ContextConfiguration(classes = MongoProfileService.class)
+@ContextConfiguration(classes = ProfileServiceImpl.class)
 class MongoProfileServiceTest {
 
     @Autowired
-    private MongoProfileService service;
+    private ProfileServiceImpl service;
     @MockBean
     private ProfileRepositoryService repositoryService;
 
