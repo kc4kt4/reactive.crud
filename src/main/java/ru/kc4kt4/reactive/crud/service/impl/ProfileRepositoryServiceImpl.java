@@ -1,21 +1,19 @@
 package ru.kc4kt4.reactive.crud.service.impl;
 
 import lombok.AllArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import ru.kc4kt4.reactive.crud.domain.Profile;
-import ru.kc4kt4.reactive.crud.domain.repository.ProfileRepository;
-import ru.kc4kt4.reactive.crud.service.ProfileService;
+import ru.kc4kt4.reactive.crud.repository.ProfileRepository;
+import ru.kc4kt4.reactive.crud.service.ProfileRepositoryService;
 
 import java.util.Objects;
 
 @Service
-@Slf4j
 @AllArgsConstructor
-public class MongoProfileService implements ProfileService {
+public class ProfileRepositoryServiceImpl implements ProfileRepositoryService {
     private final ProfileRepository repository;
 
     @Override

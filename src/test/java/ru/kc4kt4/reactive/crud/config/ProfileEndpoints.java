@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.reactive.WebFluxTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.dao.DuplicateKeyException;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
@@ -92,6 +94,24 @@ class ProfileEndpoints {
         final Profile profiles = mapper.readValue(new String(Objects.requireNonNull(content)), Profile.class);
         assertThat(profiles).isEqualTo(profile);
         verify(service, times(1)).createOrUpdate(profile);
+    }
+
+    @Test
+    void save_unprocessableEntity_duplicateKey() {
+        final Profile profile = new Profile("1", "A", "B", "C");
+        when(service.createOrUpdate(any())).thenThrow(new DuplicateKeyException(profile.getId()));
+
+        //test
+        client
+                .post()
+                .uri("/profiles")
+                .contentType(MediaType.APPLICATION_JSON)
+                .body(Mono.just(profile), Profile.class)
+                .exchange()
+                .expectStatus().isEqualTo(HttpStatus.UNPROCESSABLE_ENTITY)
+                .expectHeader().contentType(MediaType.APPLICATION_JSON);
+
+        verify(service, times(1)).createOrUpdate(any());
     }
 
     @Test

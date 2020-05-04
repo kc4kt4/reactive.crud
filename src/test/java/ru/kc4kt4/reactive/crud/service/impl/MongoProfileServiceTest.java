@@ -1,130 +1,101 @@
 package ru.kc4kt4.reactive.crud.service.impl;
 
-import org.bson.types.ObjectId;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.data.mongodb.core.ReactiveMongoOperations;
+import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
-import org.testcontainers.containers.FixedHostPortGenericContainer;
-import org.testcontainers.containers.GenericContainer;
-import org.testcontainers.junit.jupiter.Container;
-import org.testcontainers.junit.jupiter.Testcontainers;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 import reactor.test.StepVerifier;
 import ru.kc4kt4.reactive.crud.domain.Profile;
+import ru.kc4kt4.reactive.crud.service.ProfileRepositoryService;
 
-import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.mockito.Mockito.*;
 
 @ExtendWith(SpringExtension.class)
 @ActiveProfiles("test")
-@SpringBootTest
-@Testcontainers
+@ContextConfiguration(classes = ProfileServiceImpl.class)
 class MongoProfileServiceTest {
-    private static final String COLLECTION_NAME = "profile";
 
-    @SuppressWarnings("rawtypes")
-    @Container
-    private static final GenericContainer mongo = new FixedHostPortGenericContainer("mongo:latest")
-            .withFixedExposedPort(27017, 27017)
-            .withEnv("MONGO_INITDB_DATABASE", "profile");
     @Autowired
-    private MongoProfileService service;
-    @Autowired
-    private ReactiveMongoOperations mongoOperations;
+    private ProfileServiceImpl service;
+    @MockBean
+    private ProfileRepositoryService repositoryService;
 
-    @Test
-    void container() {
-        assertTrue(mongo.isRunning(), "container is running");
+    @BeforeEach
+    void setUp() {
+        reset(repositoryService);
+    }
+
+    @AfterEach
+    void verifyNoMore() {
+        verifyNoMoreInteractions(repositoryService);
     }
 
     @Test
     void all() {
-        final Profile profile1 = new Profile("1", "f_name", "s_name", "m@gmail.com");
-        final Profile profile2 = new Profile("2", "f_name1", "s_name1", "m1@gmail.com");
-        mongoOperations.save(profile1, COLLECTION_NAME).block();
-        mongoOperations.save(profile2, COLLECTION_NAME).block();
+        final Profile profile1 = new Profile("1", "A1", "B1", "C1");
+        final Profile profile2 = new Profile("2", "A2", "B2", "C2");
+        final Flux<Profile> returned = Flux.just(profile1, profile2);
+        when(repositoryService.all()).thenReturn(returned);
 
-        try {
-            //test
-            StepVerifier
-                    .create(service.all())
-                    .expectNextMatches(profile -> profile.equals(profile1))
-                    .expectNextMatches(profile -> profile.equals(profile2))
-                    .verifyComplete();
-        } finally {
-            mongoOperations.remove(profile1, COLLECTION_NAME).block();
-            mongoOperations.remove(profile2, COLLECTION_NAME).block();
-        }
+        //test
+        StepVerifier
+                .create(service.all())
+                .expectNextMatches(profile -> profile.equals(profile1))
+                .expectNextMatches(profile -> profile.equals(profile2))
+                .verifyComplete();
+
+        verify(repositoryService, times(1)).all();
     }
 
     @Test
     void findById() {
-        final Profile profile1 = new Profile("1", "f_name", "s_name", "m@gmail.com");
-        mongoOperations.save(profile1, COLLECTION_NAME).block();
-
-        try {
-            //test
-            StepVerifier
-                    .create(service.findById(profile1.getId()))
-                    .expectNextMatches(profile -> profile.equals(profile1))
-                    .verifyComplete();
-        } finally {
-            mongoOperations.remove(profile1, COLLECTION_NAME).block();
-        }
-    }
-
-    @Test
-    void create() {
-        final String id = new ObjectId().toString();
-        final Profile profile1 = new Profile(id, "f_name", "s_name", "m@gmail.com");
-
-        try {
-            //test
-            service.createOrUpdate(profile1).block();
-
-            StepVerifier
-                    .create(mongoOperations.findById(id, Profile.class, COLLECTION_NAME))
-                    .expectNextMatches(profile -> profile.equals(profile1))
-                    .verifyComplete();
-        } finally {
-            mongoOperations.remove(profile1, COLLECTION_NAME).block();
-        }
-    }
-
-    @Test
-    void update() {
-        final Profile profile1 = new Profile("1", "f_name", "s_name", "m@gmail.com");
-        mongoOperations.save(profile1, COLLECTION_NAME).block();
+        final Profile profile1 = new Profile("1", "A1", "B1", "C1");
+        final Mono<Profile> returned = Mono.just(profile1);
+        when(repositoryService.findById(profile1.getId())).thenReturn(returned);
 
         //test
-        try {
-            StepVerifier
-                    .create(service.findById(profile1.getId()))
-                    .expectNextMatches(profile -> profile.equals(profile1))
-                    .verifyComplete();
-        } finally {
-            mongoOperations.remove(profile1, COLLECTION_NAME).block();
-        }
+        StepVerifier
+                .create(service.findById(profile1.getId()))
+                .expectNextMatches(profile -> profile.equals(profile1))
+                .verifyComplete();
+
+        verify(repositoryService, times(1)).findById(profile1.getId());
+    }
+
+    @Test
+    void createOrUpdate() {
+        final Profile profile1 = new Profile("1", "A1", "B1", "C1");
+        final Mono<Profile> returned = Mono.just(profile1);
+        when(repositoryService.createOrUpdate(profile1)).thenReturn(returned);
+
+        //test
+        StepVerifier
+                .create(service.createOrUpdate(profile1))
+                .expectNextMatches(profile -> profile.equals(profile1))
+                .verifyComplete();
+
+        verify(repositoryService, times(1)).createOrUpdate(profile1);
     }
 
     @Test
     void delete() {
-        final String id = new ObjectId().toString();
-        final Profile profile1 = new Profile(id, "f_name", "s_name", "m@gmail.com");
-        mongoOperations.save(profile1, COLLECTION_NAME).block();
+        final Profile profile1 = new Profile("1", "A1", "B1", "C1");
+        final Mono<Profile> returned = Mono.just(profile1);
+        when(repositoryService.delete(profile1.getId())).thenReturn(returned);
 
-        try {
-            //test
-            final Profile deleted = service.delete(profile1.getId()).block();
+        //test
+        StepVerifier
+                .create(service.delete(profile1.getId()))
+                .expectNextMatches(profile -> profile.equals(profile1))
+                .verifyComplete();
 
-            assertThat(deleted).isEqualTo(profile1);
-            final Profile profile = mongoOperations.findAll(Profile.class).blockFirst();
-            assertThat(profile).isNull();
-        } catch (Exception e) {
-            mongoOperations.remove(profile1, COLLECTION_NAME).block();
-        }
+        verify(repositoryService, times(1)).delete(profile1.getId());
     }
 }

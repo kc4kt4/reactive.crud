@@ -16,5 +16,5 @@ public interface ProfileHandler {
     Mono<ServerResponse> deleteById(@NotNull ServerRequest request);
 
     @NotNull
-    Mono<ServerResponse> createAndUpdate(@NotNull ServerRequest request);
+    Mono<ServerResponse> save(@NotNull ServerRequest request);
 }
