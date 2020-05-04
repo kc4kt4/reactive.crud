@@ -12,6 +12,7 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 import org.springframework.web.server.WebFilter;
 import ru.kc4kt4.reactive.crud.service.ProfileHandler;
 
+import static org.springframework.http.MediaType.APPLICATION_JSON;
 import static org.springframework.web.reactive.function.server.RequestPredicates.*;
 import static org.springframework.web.reactive.function.server.RouterFunctions.route;
 
@@ -21,10 +22,10 @@ public class ProfileEndpointConfiguration {
 
     @Bean
     RouterFunction<ServerResponse> profiles(@NotNull ProfileHandler handler) {
-        return route(GET("/profiles"), handler::all)
-                .andRoute(GET("/profiles/{id}"), handler::getById)
-                .andRoute(DELETE("/profiles/{id}"), handler::deleteById)
-                .andRoute(POST("/profiles"), handler::save);
+        return route(GET("/profiles").and(accept(APPLICATION_JSON)), handler::all)
+                .andRoute(GET("/profiles/{id}").and(accept(APPLICATION_JSON)), handler::getById)
+                .andRoute(DELETE("/profiles/{id}").and(accept(APPLICATION_JSON)).and(contentType(APPLICATION_JSON)), handler::deleteById)
+                .andRoute(POST("/profiles").and(accept(APPLICATION_JSON)).and(contentType(APPLICATION_JSON)), handler::save);
     }
 
     @Bean
