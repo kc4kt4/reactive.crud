@@ -20,7 +20,7 @@ import static org.springframework.web.reactive.function.server.RouterFunctions.r
 public class ProfileEndpointConfiguration {
 
     @Bean
-    RouterFunction<ServerResponse> routes(@NotNull ProfileHandler handler) {
+    RouterFunction<ServerResponse> profiles(@NotNull ProfileHandler handler) {
         return route(GET("/profiles"), handler::all)
                 .andRoute(GET("/profiles/{id}"), handler::getById)
                 .andRoute(DELETE("/profiles/{id}"), handler::deleteById)
