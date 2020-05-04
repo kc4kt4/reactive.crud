@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff3c7ca3-1212-49e2-a4b0-f99ec3d7d9a4" name="Default Changelist" comment="" />
+    <list default="true" id="ff3c7ca3-1212-49e2-a4b0-f99ec3d7d9a4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webflux_5_2_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webflux_5_2_5_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/config/ProfileEndpointConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/config/ProfileEndpointConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/service/ProfileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/service/ProfileHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/service/impl/ProfileHandlerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kc4kt4/reactive/crud/service/impl/ProfileHandlerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/kc4kt4/reactive/crud/config/ProfileEndpoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/kc4kt4/reactive/crud/config/ProfileEndpoints.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,9 +17,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -35,7 +42,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/org/springframework/spring-webflux/5.2.2.RELEASE" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.37114847" />
@@ -73,63 +80,67 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MongoProfileServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProfileEndpoints (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="crud" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.kc4kt4.reactive.crud.repository.*" />
+          <option name="PATTERN" value="ru.kc4kt4.reactive.crud.config.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.kc4kt4.reactive.crud.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="ru.kc4kt4.reactive.crud.service.impl.MongoProfileServiceTest" />
+      <option name="PACKAGE_NAME" value="ru.kc4kt4.reactive.crud.config" />
+      <option name="MAIN_CLASS_NAME" value="ru.kc4kt4.reactive.crud.config.ProfileEndpoints" />
+      <option name="METHOD_NAME" value="save_unprocessableEntity_duplicateKey" />
+      <option name="TEST_OBJECT" value="uniqueId" />
+      <uniqueIds>
+        <uniqueId value="[engine:junit-jupiter]/[class:ru.kc4kt4.reactive.crud.config.ProfileEndpoints]" />
+      </uniqueIds>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProfileEndpoints" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crud" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.kc4kt4.reactive.crud.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.kc4kt4.reactive.crud.config" />
+      <option name="MAIN_CLASS_NAME" value="ru.kc4kt4.reactive.crud.config.ProfileEndpoints" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MongoProfileServiceTest.all" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProfileEndpoints.save_badRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="crud" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.kc4kt4.reactive.crud.repository.*" />
+          <option name="PATTERN" value="ru.kc4kt4.reactive.crud.config.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.kc4kt4.reactive.crud.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="ru.kc4kt4.reactive.crud.service.impl.MongoProfileServiceTest" />
-      <option name="METHOD_NAME" value="all" />
+      <option name="PACKAGE_NAME" value="ru.kc4kt4.reactive.crud.config" />
+      <option name="MAIN_CLASS_NAME" value="ru.kc4kt4.reactive.crud.config.ProfileEndpoints" />
+      <option name="METHOD_NAME" value="save_badRequest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProfileRepositoryServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProfileEndpoints.save_unprocessableEntity_duplicateKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="crud" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.kc4kt4.reactive.crud.service.impl.*" />
+          <option name="PATTERN" value="ru.kc4kt4.reactive.crud.config.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.kc4kt4.reactive.crud.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="ru.kc4kt4.reactive.crud.service.impl.ProfileRepositoryServiceImplTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProfileRepositoryServiceImplTest.all" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="crud" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.kc4kt4.reactive.crud.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.kc4kt4.reactive.crud.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="ru.kc4kt4.reactive.crud.service.impl.ProfileRepositoryServiceImplTest" />
-      <option name="METHOD_NAME" value="all" />
+      <option name="PACKAGE_NAME" value="ru.kc4kt4.reactive.crud.config" />
+      <option name="MAIN_CLASS_NAME" value="ru.kc4kt4.reactive.crud.config.ProfileEndpoints" />
+      <option name="METHOD_NAME" value="save_unprocessableEntity_duplicateKey" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -145,10 +156,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in crud" />
-        <item itemvalue="JUnit.ProfileRepositoryServiceImplTest.all" />
-        <item itemvalue="JUnit.ProfileRepositoryServiceImplTest" />
-        <item itemvalue="JUnit.MongoProfileServiceTest" />
-        <item itemvalue="JUnit.MongoProfileServiceTest.all" />
+        <item itemvalue="JUnit.ProfileEndpoints" />
+        <item itemvalue="JUnit.ProfileEndpoints.save_badRequest" />
+        <item itemvalue="JUnit.ProfileEndpoints.save_unprocessableEntity_duplicateKey" />
+        <item itemvalue="JUnit.ProfileEndpoints (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +175,7 @@
       <updated>1587923050690</updated>
       <workItem from="1587923057200" duration="6757000" />
       <workItem from="1588232932497" duration="4756000" />
-      <workItem from="1588249224529" duration="16139000" />
+      <workItem from="1588249224529" duration="21129000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1587923319808</created>
@@ -215,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588500608862</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="[refactoring] rename base business service impl name">
+      <created>1588500923531</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1588500923531</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,20 +251,25 @@
     <MESSAGE value="update gitignore file" />
     <MESSAGE value="update ignoring" />
     <MESSAGE value="[refactoring] change tests and move data access to repositoryService" />
-    <option name="LAST_COMMIT_MESSAGE" value="[refactoring] change tests and move data access to repositoryService" />
+    <MESSAGE value="[refactoring] rename base business service impl name" />
+    <option name="LAST_COMMIT_MESSAGE" value="[refactoring] rename base business service impl name" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="526" y="224" key="#Notifications" timestamp="1588501800134">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="526" y="224" key="#Notifications/0.0.1280.720@0.0.1280.720" timestamp="1588501800134" />
     <state x="121" y="0" key="#Project_Structure" timestamp="1587925803043">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="121" y="0" key="#Project_Structure/0.0.1280.720@0.0.1280.720" timestamp="1587925803043" />
-    <state x="446" y="67" key="#com.intellij.ide.util.MemberChooser" timestamp="1588439292275">
+    <state x="446" y="67" key="#com.intellij.ide.util.MemberChooser" timestamp="1588572097241">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="446" y="67" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1588439292275" />
+    <state x="446" y="67" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1588572097241" />
     <state x="249" y="285" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1588439129996">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -259,50 +282,54 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="438" y="242" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1280.720@0.0.1280.720" timestamp="1588439131448" />
-    <state x="145" y="6" width="1097" height="692" key="#xdebugger.evaluate" timestamp="1588269953569">
+    <state x="129" y="28" width="1097" height="692" key="#xdebugger.evaluate" timestamp="1588572809961">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="145" y="6" width="1097" height="692" key="#xdebugger.evaluate/0.0.1280.720@0.0.1280.720" timestamp="1588269953569" />
-    <state x="264" y="0" key="CommitChangelistDialog2" timestamp="1588500607879">
+    <state x="129" y="28" width="1097" height="692" key="#xdebugger.evaluate/0.0.1280.720@0.0.1280.720" timestamp="1588572809961" />
+    <state x="264" y="0" key="CommitChangelistDialog2" timestamp="1588500922739">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1588500607879" />
+    <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1588500922739" />
+    <state x="421" y="102" key="FileChooserDialogImpl" timestamp="1588501805940">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="421" y="102" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1588501805940" />
     <state x="520" y="259" key="Github.ShareDialog" timestamp="1587923248418">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="520" y="259" key="Github.ShareDialog/0.0.1280.720@0.0.1280.720" timestamp="1587923248418" />
-    <state width="1237" height="410" key="GridCell.Tab.0.bottom" timestamp="1588500578581">
+    <state width="1237" height="347" key="GridCell.Tab.0.bottom" timestamp="1588572926666">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="410" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1588500578581" />
-    <state width="1237" height="410" key="GridCell.Tab.0.center" timestamp="1588500578580">
+    <state width="1237" height="347" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1588572926666" />
+    <state width="1237" height="347" key="GridCell.Tab.0.center" timestamp="1588572926666">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="410" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1588500578580" />
-    <state width="1237" height="410" key="GridCell.Tab.0.left" timestamp="1588500578580">
+    <state width="1237" height="347" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1588572926666" />
+    <state width="1237" height="347" key="GridCell.Tab.0.left" timestamp="1588572926666">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="410" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1588500578580" />
-    <state width="1237" height="410" key="GridCell.Tab.0.right" timestamp="1588500578580">
+    <state width="1237" height="347" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1588572926666" />
+    <state width="1237" height="347" key="GridCell.Tab.0.right" timestamp="1588572926666">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="410" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1588500578580" />
-    <state width="1237" height="324" key="GridCell.Tab.1.bottom" timestamp="1588330738624">
+    <state width="1237" height="347" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1588572926666" />
+    <state width="1237" height="304" key="GridCell.Tab.1.bottom" timestamp="1588572812405">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="324" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1588330738624" />
-    <state width="1237" height="324" key="GridCell.Tab.1.center" timestamp="1588330738624">
+    <state width="1237" height="304" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1588572812405" />
+    <state width="1237" height="304" key="GridCell.Tab.1.center" timestamp="1588572812405">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="324" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1588330738624" />
-    <state width="1237" height="324" key="GridCell.Tab.1.left" timestamp="1588330738624">
+    <state width="1237" height="304" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1588572812405" />
+    <state width="1237" height="304" key="GridCell.Tab.1.left" timestamp="1588572812404">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="324" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1588330738624" />
-    <state width="1237" height="324" key="GridCell.Tab.1.right" timestamp="1588330738624">
+    <state width="1237" height="304" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1588572812404" />
+    <state width="1237" height="304" key="GridCell.Tab.1.right" timestamp="1588572812405">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="324" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1588330738624" />
+    <state width="1237" height="304" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1588572812405" />
     <state x="142" y="6" key="SettingsEditor" timestamp="1588498421765">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -327,5 +354,12 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1588439679442" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo typeName="reactor.core.publisher.MonoCollectList" fieldName="source" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
